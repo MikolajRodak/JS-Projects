@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #73c22f;
+    border-radius: 8px;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 3em;
+    background-color: #73c22f;
+  }
+  
+  .header > h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .header > p {
+    margin-top: 0.4em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: white;
+  }
+  
+  .main {
+    padding: 2em;
+  }
+  
+  .main > .div {
+    padding-top: 1.4em;
+  }
+  
+  .main > .div > p {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+  }
+  
+  .main > .div > input {
+    margin-top: 0.2em;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #73c22f;
+    height: 20px;
+    border-radius: 4px;
+  }
+  
+  .main > .div > input:focus {
+    border: 1px solid green;
+  }
+  
+  .main > .div > select {
+    margin-top: 0.2em;
+    width: 100%;
+    border: 1px solid #73c22f;
+    height: 20px;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    margin-left: 50%;
+    margin-top: 2em;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0.6em 5em;
+    background-color: #73c22f;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+  
+  .cost-info {
+    display: none;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.9rem;
+  }
+  
+  .cost {
+    font-weight: bold;
+  }
+  
+  .error {
+    display: none;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.9rem;
+  }
+  

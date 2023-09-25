@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>billsplitter</h1>
+      <p>podziel się rachunkiem ze znajomymi!;)</p>
+    </div>
+    <div class="main">
+      <div class="bill div">
+        <p>Kwota do zapłaty</p>
+        <input type="number" id="price" />
+      </div>
+      <div class="peopleAmount div">
+        <p>Ilość osób</p>
+        <input type="number" id="people" />
+      </div>
+      <div class="tip div">
+        <p>Napiwek</p>
+        <select id="tip">
+          <option value="0" selected>-wybierz napiwek-</option>
+          <option value="0.05">5%</option>
+          <option value="0.1">10%</option>
+          <option value="0.15">15%</option>
+          <option value="0.2">20%</option>
+        </select>
+      </div>
+
+      <button class="btn">Olicz</button>
+      <p class="error">Wypełnij wszystkie pola</p>
+      <p class="cost-info">
+        Powinniście sie złozyc po <span class="cost"></span>zł
+      </p>
+    </div>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
