@@ -5,8 +5,9 @@
 }
 
 :root {
-	--first-color: #fa1406;
-	--second-color: #d2c7be;
+	--first-color: rgb(250, 20, 6);
+	--second-color: rgb(210, 199, 190);
+	--hover-color: rgb(200, 8, 0);
 }
 
 body {
@@ -31,21 +32,88 @@ body {
 	border-radius: 8px;
 	box-shadow: 5px 5px 10px black;
 	color: #fff;
+	overflow: hidden;
+}
+
+.colors {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 40%;
+	width: 60px;
+	right: 10px;
+	top: 25%;
+	transform: translateX(100px);
+	transition: transform 0.3s;
+}
+
+.showColors {
+	transform: translateX(0);
+}
+
+.color {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: background-color 0.3s;
+}
+
+.color:hover {
+	cursor: pointer;
+}
+
+.one {
+	background-color: rgb(32, 107, 199);
+	box-shadow: 0px 0px 20px rgb(32, 107, 199);
+}
+
+.one:hover {
+	background-color: rgb(29, 96, 179);
+}
+
+.two {
+	background-color: rgb(250, 20, 6);
+	box-shadow: 0px 0px 20px rgb(250, 20, 6);
+}
+
+.two:hover {
+	background-color: rgb(185, 13, 4);
+}
+
+.three {
+	background-color: rgb(3, 252, 23);
+	box-shadow: 0px 0px 20px rgb(3, 252, 23);
+}
+
+.three:hover {
+	background-color: rgb(3, 197, 19);
 }
 
 .info {
 	position: absolute;
-	top: 6px;
-	right: 14px;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	right: 1em;
 	padding: 20px;
 	font-size: 24px;
+}
+
+.info i {
+	position: absolute;
 	color: var(--second-color);
 	cursor: pointer;
 	transition: color 0.3s;
+	padding: 1em;
 }
 
-.info:hover {
-	color: var(--first-color);
+.info i:hover {
+	color: var(--hover-color);
+}
+
+.fa-paintbrush {
+	right: 30px;
 }
 
 h1 {
@@ -126,7 +194,7 @@ button:focus {
 	height: 360px;
 	padding: 30px 60px;
 	border-radius: 15px;
-	background-color: #245245;
+	background-color: var(--second-color);
 }
 
 .modal h3 {
@@ -140,6 +208,10 @@ button:focus {
 	font-size: 20px;
 }
 
+.modal i {
+	color: var(--first-color);
+}
+
 .modal .close {
 	display: block;
 	margin: 40px auto 0;
@@ -149,7 +221,7 @@ button:focus {
 }
 
 .modal .close:hover {
-	background-color: rgb(226, 36, 26);
+	background-color: var(--hover-color);
 }
 
 .modal-animation {
